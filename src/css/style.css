@@ -1,0 +1,107 @@
+*{
+    color: rgb(255, 255, 255) !important;
+
+}
+body{
+    background-color: #001c3d !important;
+    padding-bottom: 30px;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+      font-size: 35px;
+}
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+header a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+header #searchDiv{
+    background-color:#429cf0;
+    width: 152px;
+    height: 30px;
+    border-radius: 50px;
+    padding: 0 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#searchDiv img{
+    width: 15.7px;
+    height: 15.7px;
+
+}
+ #boxSearch{
+    height: 47px;
+    background-color: #0da2e1e8;
+    border-radius: 30px;
+}
+#boxSearch input{
+    font-family: 'Times New Roman', Times, serif;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    height: 34px;
+
+}
+#boxSearch input::placeholder{
+    color: rgb(255, 255, 255);
+}
+#boxSearch img{
+  width: 16.7px;
+  height: 16.7px;
+  cursor: pointer;
+}
+#divCartSearch{
+   
+    height: 95px;
+    background-color: #001c3d;
+}
+#divCartSearch > img{
+  width: 150px;
+  height: 70px;
+}
+#divCartSearch a img{
+    width:30px;
+    height: 30px;
+}
+.carousel {
+    width: 900px;
+    height:350px
+    
+}
+.carousel img{
+    border-radius: 10px;
+    width: 588px;
+    height: 349px;
+    
+}
+.carousel-caption{
+    top: 0;
+    left: -40% !important;
+} 
+
+.icon-music img{
+    width: 190.95px;
+    height: 81.53px;
+}
+
+#topComponent{
+    background-color: #001c3d;
+}
+
+.trendingA{
+    background-color: #001c3d;
+
+}
+.link-play {
+    bottom: -40px;
+    right: 40px;
+    transition: 0.5s;
+
+}
