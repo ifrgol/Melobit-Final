@@ -1,6 +1,5 @@
 import React  from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js'
 import logo from "../images/logo.svg";
 import search from "../images/search.svg";
 import {Link} from 'react-router-dom';
