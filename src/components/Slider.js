@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import { getSlider } from '../Service/api';
 
 
+
 const Slider = () => {
      
     const [slider,setSlider]=useState([])
@@ -24,12 +25,18 @@ const Slider = () => {
             <div className='col-md-6 col-sm-11 col-11 m-0 p-0'>
 
 
+           
             <div id="carouselExampleControls" className="carousel slide mx-auto w-100" data-bs-ride="carousel">
   <div className="carousel-inner ">
 {
-slider.map((a,n)=>(
-      <div key={a.id} className={n===0?"carousel-item active":"carousel-item"}>
- <img src={a.album.image.cover.url} className="d-block w-100" alt="..." />
+slider.map((s,i)=>(
+      <div key={s.id} className={i===0?"carousel-item active":"carousel-item"}>
+ <img src={s.album.image.cover.url} className="d-block w-100" alt="..." />
+      <div className="carousel-caption">
+        <h5><button>
+         
+         </button></h5>
+      </div>
       </div>
 ))
     }
