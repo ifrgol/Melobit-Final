@@ -1,14 +1,14 @@
 import React , {useState, useEffect}  from 'react';
-import { getTopWeekSong } from '../services/api';
-import Top from './Top';
+import { getTopSongsOfWeek } from '../Service/api';
+import Top from './TopSongs';
 
-const Topweeksong = () => {
-    const [topWeekSong,setTopWeekSong]=useState([])
+const TopSongsOfWeek = () => {
+    const [topWeekSong,setTopSongsOfWeek]=useState([])
 
     useEffect(()=>{
       const fetchAPI= async () =>{
-         const data=await getTopWeekSong();
-         setTopWeekSong(data)
+         const data=await getTopSongsOfWeek();
+         setTopSongsOfWeek(data)
       }
       fetchAPI();
   },[])
@@ -19,4 +19,4 @@ const Topweeksong = () => {
     );
 };
 
-export default Topweeksong;
+export default TopSongsOfWeek;

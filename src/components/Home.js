@@ -1,16 +1,16 @@
 import React from 'react';
-import Carousel from "./Carousel";
+import Slider from "./Slider";
 import Newsongs from './Newsongs';
-import Topdaysong from './Topdaysong';
+import TopSongDay from './TopSongDay';
 import Topweeksong from './Topweeksong';
 import Trendingartists from './Trendingartists';
 
 const Home = () => {
     return (
         <div>
-            <Carousel/>
+            <Slider/>
             <center><Trendingartists/></center>
-            <center><Topdaysong/></center>
+            <center><TopSongDay/></center>
             <center><Newsongs/></center>
             <center><Topweeksong/></center>
         </div>

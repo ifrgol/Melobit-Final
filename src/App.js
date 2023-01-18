@@ -3,7 +3,7 @@ import "./css/style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
 import { Route, Routes} from 'react-router-dom';
-import Cartsearch from "./components/Cartsearch";
+import Search from "./components/Search";
 
 
 
@@ -14,7 +14,7 @@ function App() {
 
       <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/search" element={<Cartsearch/>} />
+          <Route path="/search" element={<Search/>} />
                
       </Routes>
 

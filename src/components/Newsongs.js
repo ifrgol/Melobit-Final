@@ -1,6 +1,6 @@
 import React , {useState, useEffect}  from 'react';
-import { getLatestSong } from '../services/api';
-import Top from './Top';
+import { getLatestSong } from '../Service/api';
+import Top from './TopSongs';
 
 
 const Newsongs = () => {

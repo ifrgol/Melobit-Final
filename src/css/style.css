@@ -35,12 +35,12 @@ header #searchDiv{
     height: 15.7px;
 
 }
- #boxSearch{
+ #Searchbox{
     height: 47px;
     background-color: #0da2e1e8;
     border-radius: 30px;
 }
-#boxSearch input{
+#Searchbox input{
     font-family: 'Times New Roman', Times, serif;
     background: none;
     border: none;
@@ -49,10 +49,10 @@ header #searchDiv{
     height: 34px;
 
 }
-#boxSearch input::placeholder{
+#Searchbox input::placeholder{
     color: rgb(255, 255, 255);
 }
-#boxSearch img{
+#Searchbox img{
   width: 16.7px;
   height: 16.7px;
   cursor: pointer;

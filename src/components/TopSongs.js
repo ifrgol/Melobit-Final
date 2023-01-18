@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Top = ({title,state}) => {
+const TopSongs = ({title,state}) => {
     return (
         <div id='topComponent' className='mt-5 py-3' >
         <div className='container'>
@@ -10,13 +10,13 @@ const Top = ({title,state}) => {
                <h2>{title}</h2>
             </div>
             {
-                state.map((song)=>(
-                    <div className='col-md col-sm-12 col-12'key={song.id}>
+                state.map((g)=>(
+                    <div className='col-md col-sm-12 col-12'key={g.id}>
                     <div className='container-play-icon position-relative w-100 overflow-hidden'>
-                    <img src={song.album.image.cover.url} className='w-100' alt={song.album.name.replace('Single','')}/>
+                    <img src={g.album.image.cover.url} className='w-100' alt={g.album.name.replace('Single','')}/>
                     </div>
-                    <h6 className='px-3 pt-2'>{song.album.name.replace('Single','')}</h6>
-                    <h6 className='text-white-50 px-3'>{song.album.artists[0].fullName}</h6>
+                    <h6 className='px-3 pt-2'>{g.album.name.replace('Single','')}</h6>
+                    <h6 className='text-white-50 px-3'>{g.album.artists[0].fullName}</h6>
                     </div>
                 ))
             }
@@ -26,4 +26,4 @@ const Top = ({title,state}) => {
     );
 }
 
-export default Top;
+export default TopSongs;

@@ -1,8 +1,8 @@
 import React ,{useState} from 'react';
 import axios from "axios";
-import search from "../images/search.svg";
+import search from "../Images/search.svg";
 
-const Cartsearch=()=>{
+const Search=()=>{
 
   const[searchInput,setSearch]=useState("");
   const[searchResult,setsearchResult]=useState([]) 
@@ -26,7 +26,7 @@ const Cartsearch=()=>{
       <div className='container-fluid'>
         <div className='row justify-content-center mt-5'>
           <div className='col-md-6 col-sm-11 col-11'>
-          <div id='boxSearch' className='w-100 d-flex justify-content-between align-items-center'>
+          <div id='Searchbox' className='w-100 d-flex justify-content-between align-items-center'>
                        <input type="text" className='px-3' placeholder='Search ... ' value={searchInput} 
                       
                       onChange={saveSearchHandeler} 
@@ -44,19 +44,19 @@ const Cartsearch=()=>{
         <div className='row justify-content-center mt-3' >
 
       {
-       searchResult.map((s)=>(
+       searchResult.map((a)=>(
           
-            s.type==="song" && 
+            a.type==="song" && 
           
-               <div className='col-md-5 col-sm-11 col-11 text-center mt-4' key={s.position}>
+               <div className='col-md-5 col-sm-11 col-11 text-center mt-4' key={a.position}>
                 <div id='divCartSearch' className='w-100 d-flex align-items-center justify-content-evenly'>
-                    <img src={s.song.album.image.cover.url} alt={s.song.album.name.replace('Single' , '')}/>
+                    <img src={a.song.album.image.cover.url} alt={a.song.album.name.replace('Single' , '')}/>
                    <div>
                      <h6>
-                      {s.song.album.name.replace('Single' , '')}
+                      {a.song.album.name.replace('Single' , '')}
                      
                      </h6>
-                    <p>{s.song.album.artists[0].fullName}</p>
+                    <p>{a.song.album.artists[0].fullName}</p>
                    </div> 
                 </div>
 
@@ -72,4 +72,4 @@ const Cartsearch=()=>{
     );
 }
 
-export default Cartsearch;
+export default Search;

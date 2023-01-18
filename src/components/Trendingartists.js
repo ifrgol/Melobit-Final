@@ -1,5 +1,5 @@
 import React , {useState, useEffect}  from 'react';
-import { getTrendingArtists } from '../services/api';
+import { getTrendingArtists } from '../Service/api';
 
 
 const Trendingartists = () => {
@@ -25,10 +25,10 @@ const Trendingartists = () => {
                <h2>Trending Artists</h2>
             </div>
             {
-                trendingArtists.map((a)=>(
-                    <div className='col-md-3 col-sm-6 col-6' key={a.id}>
+                trendingArtists.map((t)=>(
+                    <div className='col-md-3 col-sm-6 col-6' key={t.id}>
                         <br></br>
-                    <img src={a.image.cover.url} alt={a.fullName} className='w-100'/>
+                    <img src={t.image.cover.url} alt={t.fullName} className='w-100'/>
                     </div>
                 ))
             } 
