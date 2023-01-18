@@ -1,6 +1,6 @@
 import React ,{useState} from 'react';
 import axios from "axios";
-import search from "../Images/search.svg";
+import search from "../images/search.svg";
 
 const Search=()=>{
 
