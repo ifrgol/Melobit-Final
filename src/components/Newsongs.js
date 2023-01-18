@@ -1,5 +1,5 @@
 import React , {useState, useEffect}  from 'react';
-import { getLatestSong } from '../Service/api';
+import { getLatestSong } from '../services/api';
 import Top from './TopSongs';
 
 

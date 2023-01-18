@@ -1,5 +1,5 @@
 import React , {useState, useEffect}  from 'react';
-import { getTopSongsOfWeek } from '../Service/api';
+import { getTopSongsOfWeek } from '../services/api';
 import Top from './TopSongs';
 
 const TopSongsOfWeek = () => {

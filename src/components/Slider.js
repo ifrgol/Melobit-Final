@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import { getSlider } from '../Service/api';
+import { getSlider } from '../services/api';
 
 
 

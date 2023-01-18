@@ -1,5 +1,5 @@
 import React , {useState, useEffect}  from 'react';
-import { getTrendingArtists } from '../Service/api';
+import { getTrendingArtists } from '../services/api';
 
 
 const Trendingartists = () => {
